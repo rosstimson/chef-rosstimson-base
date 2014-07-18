@@ -1,0 +1,5 @@
+image: rosstimson/dind-chefdk
+env:
+  - CI=drone
+script:
+  - rake
