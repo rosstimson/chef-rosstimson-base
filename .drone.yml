@@ -2,4 +2,8 @@ image: rosstimson/dind-chefdk
 env:
   - CI=drone
 script:
-  - rake
+  - chef exec rubocop .
+  - chef exec foodcritic .
+    # This should be just `chef exec rspec .` when a ChefDK bug is fixed.
+  - chef exec ruby -S rspec test/unit/spec
+  - chef exec kitchen test
