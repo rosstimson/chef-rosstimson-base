@@ -23,5 +23,7 @@ describe 'Ross Timson\'s Base Cookbook' do
     expect(package 'tmux').to be_installed
   end
 
-  # TODO: Add Vim test
+  it 'should install vim' do
+    expect(package 'vim').to be_installed
+  end
 end

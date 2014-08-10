@@ -2,7 +2,7 @@
 name             'rosstimson-base'
 maintainer       'Ross Timson'
 maintainer_email 'ross@rosstimson.com'
-license          'All rights reserved'
+license          'WTFPL'
 description      'Installs/Configures rosstimson-base'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
@@ -13,3 +13,6 @@ depends          'zsh'
 depends          'build-essential'
 depends          'git'
 depends          'tmux'
+
+# Not at Supermarket and added to Berksfile
+depends          'rosstimson-vim'
