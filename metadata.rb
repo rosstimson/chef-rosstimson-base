@@ -13,6 +13,3 @@ depends          'zsh'
 depends          'build-essential'
 depends          'git'
 depends          'tmux'
-
-# Not at Supermarket and added to Berksfile
-depends          'rosstimson-vim'

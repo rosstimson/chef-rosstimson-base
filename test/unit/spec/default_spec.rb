@@ -20,8 +20,4 @@ describe 'rosstimson-base::default' do
   it 'includes the `tmux` recipe' do
     expect(chef_run).to include_recipe('tmux')
   end
-
-  it 'includes the `rosstimson-vim` recipe' do
-    expect(chef_run).to include_recipe('rosstimson-vim')
-  end
 end
